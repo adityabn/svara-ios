@@ -1,0 +1,100 @@
+<ion-view hide-back-button="true">
+    <ion-nav-title style="top:7px;position:relative;right:auto;left:auto;
+   font-family:VarelaRound-Regular">
+        <span>HITS</span>
+    </ion-nav-title>
+
+    <ion-content ng-class="{expanded:$scope.isExpanded}" style="position:fixed;top:55px;">
+        <div class="item item-button-right kategori" style="padding-bottom:4px;background-color:WhiteSmoke;">
+            <h2>SOCIETY</h2>
+            <button class="button button-clear icon-more btn-more" 
+             style="right:0px;width: 5px;height: 25px;border-radius:10px;"></button>
+        </div>
+
+
+        <ion-slide-box delegate-handle="flashcard" show-pager="false" active-slide="currentIndex" on-slide-changed="slideHasChanged(currentIndex)"
+        does-continue="true">
+            <ion-slide>
+                <!-- <ion-slide ng-repeat="item in items | orderBy:random"> -->
+                <div class="container">
+                    <div class="flashcard">
+                        <div class="row">
+                            <div id="mainbox" class="col-70">
+                                <div class="card card-gallery item item-text-wrap module mid" style="height:180%;margin:0px;">
+                                    <img src="img/sansa-snowcastle3.jpg">
+                                    <p> Marisa Soebono</p>
+
+                                </div>
+                            </div>
+
+                            <div id="mainbox" class="col-70">
+                                <div class="card card-gallery item item-text-wrap module mid" style="height:180%;margin:0px;">
+                                    <img src="img/sansa-snowcastle3.jpg">
+                                    <p> test </p>
+                                </div>
+                            </div>
+
+                            <div id="mainbox" class="col-70">
+                                <div class="card card-gallery item item-text-wrap module mid" style="height:180%;margin:0px;">
+                                    <img src="img/sansa-snowcastle3.jpg">
+                                    <p> Artis </p>
+                                    <p2>Judul </p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <!-- <ion-slide ng-repeat="item in items | orderBy:random"> -->
+                <div class="container">
+                    <div class="flashcard">
+                        <div class="row">
+                            <div id="mainbox" class="col-70">
+                                <div class="card card-gallery item item-text-wrap module mid" style="height:180%;margin:0px;">
+
+                                    <img src="img/sansa-snowcastle3.jpg">
+                                    <p> test </p>
+
+
+                                </div>
+                            </div>
+
+                            <div id="mainbox" class="col-70">
+                                <div class="card card-gallery item item-text-wrap module mid" style="height:180%;margin:0px;">
+
+                                    <img src="img/sansa-snowcastle3.jpg">
+                                    <p> test </p>
+
+
+                                </div>
+                            </div>
+
+                            <div id="mainbox" class="col-70">
+                                <div class="card card-gallery item item-text-wrap module mid" style="height:180%;margin:0px;">
+
+                                    <img src="img/sansa-snowcastle3.jpg">
+                                    <p> test </p>
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </ion-slide>
+
+        </ion-slide-box>
+
+
+    </ion-content>
+</ion-view>

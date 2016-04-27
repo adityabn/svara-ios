@@ -1,0 +1,70 @@
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive" style="background-color:#41abde;" 
+        ng-class="{expanded: isExpanded, 'has-header-fab-left': hasHeaderFabLeft, 'has-header-fab-right': hasHeaderFabRight}" align-title="center">
+            <ion-nav-back-button class="no-text" ng-show="$root.showMenuIcon">
+            </ion-nav-back-button>
+            <ion-nav-buttons side="right">
+                <button class="button button-icon button-clear ion-android-more-vertical" menu-toggle="right">
+                </button>               
+            </ion-nav-buttons>
+             <ion-nav-buttons side="left">           
+               <button menu-and-drawer-toggle class="button-menu button-icon button-clear icon-nav-drawer"
+                menu-toggle="left" style="padding-left:20px;padding-top:20px;"></button>
+          </ion-nav-buttons>        
+        </ion-nav-bar>
+     
+     <!-- tabs on header -->   
+         <ion-tabs class="tabs-top tabs-icon-only tabs-defaul bar-subheader has-header"
+         style="position:relative;top:10px;">
+        <ion-tab title="TAB 1" icon="icon icon-mini icon-tab-people">
+          <ion-nav-view name="tab-dash"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="TAB 2" icon="icon icon-mini icon-tab-society" ui-sref="app.kategori">
+          <ion-nav-view name="tab-dash"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="TAB 3" icon="icon icon-mini icon-tab-star" >
+          <ion-nav-view name="tab-dash"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="TAB 4" icon="icon icon-mini icon-tab-radio">
+          <ion-nav-view name="tab-dash"></ion-nav-view>
+        </ion-tab>
+        
+        <ion-tab title="TAB 5" icon="icon icon-mini icon-tab-music">
+          <ion-nav-view name="tab-dash"></ion-nav-view>
+        </ion-tab>
+      </ion-tabs>
+      
+        <ion-nav-view name="fabContent"></ion-nav-view>
+        <ion-nav-view name="menuContent" ng-class="{expanded: isExpanded}" ></ion-nav-view>
+    </ion-side-menu-content>
+    </ion-header-bar>
+    <ion-side-menu side="left">
+        <ion-header-bar class="dark-bg expanded">
+            <span class="avatar" style="background: url('img/crown.jpg'); background-size: cover;"></span>
+            <h2>Thronester</h2>
+        </ion-header-bar>
+        <ion-content class="stable-bg has-expanded-header">
+            <ion-list>
+                <ion-item nav-clear menu-close ui-sref="app.activity">
+                    Activity
+                </ion-item>
+                <ion-item nav-clear menu-close ui-sref="app.login">
+                    Login
+                </ion-item>
+                <ion-item nav-clear menu-close ui-sref="app.profile">
+                    Profile
+                </ion-item>
+                <ion-item nav-clear menu-close ui-sref="app.friends">
+                    Friends
+                </ion-item>
+                <ion-item nav-clear menu-close ui-sref="app.gallery">
+                    Gallery
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
